@@ -190,3 +190,9 @@ net.tcp.2g_init_rwnd=10
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+# Higher fling velocities
+# for smoother scrolling and better responsiveness
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.min.fling_velocity=160 \
+ro.max.fling_velocity=20000
