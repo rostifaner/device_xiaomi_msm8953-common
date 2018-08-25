@@ -325,8 +325,8 @@
 
      <!-- Default value for proximity check on screen wake
       NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
-     <bool name="config_proximityCheckOnWake">true</bool>
-     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+     <bool name="config_proximityCheckOnWake">false</bool>
+     <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
 
      <!-- Hardware keys present on the device, stored as a bit field.
           This integer should equal the sum of the corresponding value for each
@@ -348,6 +348,9 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
     in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
+
+    <!-- AlwaysOnDisplay  -->	
+    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>	
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
