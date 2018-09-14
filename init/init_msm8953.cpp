@@ -91,6 +91,7 @@ void vendor_load_properties()
     init_alarm_boot_properties();
     check_device();
 
+    property_set("ro.boot.btmacaddr", "00:00:00:00:00:00");
     property_set("dalvik.vm.heapstartsize", "16m");
     property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
     property_set("dalvik.vm.heapsize", "512m");
